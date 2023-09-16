@@ -476,7 +476,6 @@ img {
 
 .feeds-wrap {
 	max-width:490px;
-	margin-top: 15px;
 	padding: 10px;
   }
   
@@ -549,25 +548,14 @@ footer {
 }
 
 @media screen and (max-width:430px){
-	body {
-	  padding-left: 20px;
-	  padding-right: 20px;
-	}
-	.feeds-header {
-	  flex-direction:column;
-	}
 	.feeds-header img {
 	  margin-bottom: 20px;
-	}
-	.feeds-header-info p {
-	  margin-bottom: 30px;
 	}
 	.feeds-img-wrap {
 	  padding-left: 0;
 	}
 	.feeds-info-counts {
 	display: flex;
-	margin-left: 0;
   }
   .feeds-info-counts div {
 	margin-right: 10px;
