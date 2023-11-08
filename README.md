@@ -1,2 +1,2 @@
 # portfolioweb
-my first web portfolio
+My first web portfolio with Pure HTML, CSS, & JavaScript.
