@@ -183,13 +183,15 @@ img {
   cursor: pointer;
 }
 
-/* .btn:hover {
-  background-color: var(--body-color);
-} */
+.bmail:hover {
+  background-color: var(--bright-blue);
+  color: var(--container-color);
+}
 
 .btn_menu {
-  background-color: var(--golden-yellow);
-  color: var(--container-color);
+  background-color: var(--text-color-lighten);
+  font-size: 18px;
+  color: var(--title-color);
   text-decoration: none;
   padding: 0.5rem;
   border-radius: 0.75rem;
@@ -199,7 +201,7 @@ img {
 }
 
 .btn_menu:hover {
-  background-color: var(--body-color);
+  background-color: var(--golden-yellow);
 }
 
 .unfollow {
@@ -542,7 +544,6 @@ i {
 /*=============== FEEDS ===============*/
 
 .avator {
-  /* border-radius:100px; */
   width: 36px;
   margin-right: 15px;
 }
@@ -595,7 +596,7 @@ i {
 }
 
 .feedsnormal {
-  color: black; /* Awalnya tombol hitam */
+  color: var(--title-color); /* Awalnya tombol hitam */
 }
 
 .heart-filled {
@@ -659,7 +660,7 @@ footer {
   display: flex;
   overflow: hidden;
   width: 360px;
-  padding-top: 10px;
+  padding: 20px 0;
   margin-left: 50px;
 }
 
@@ -683,14 +684,17 @@ footer {
 .card p {
   padding: 10px;
   margin: 0;
+  font-weight: normal;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
 }
 
 .slider-button {
-  padding: 10px 0;
+  /* padding: 20px 0; */
   margin-left: 50px;
   cursor: pointer;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .sbutton {
@@ -705,6 +709,11 @@ footer {
   border-radius: 0.75rem;
   transition: 0.3s;
   border: none;
+}
+
+.sbutton:hover {
+  background-color: var(--lavenderpurple);
+  color: var(--container-color);
 }
 
 /*=============== RESPON ===============*/
