@@ -75,13 +75,51 @@ document
   });
 
 /*==================== Animation ====================*/
+const cards = document.querySelectorAll(".card");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+let currentIndex = 0;
+let interval;
 
-document.addEventListener("DOMContentLoaded", function () {
-  const skillsBox = document.getElementById("skillsBox");
-
-  skillsBox.addEventListener("animationiteration", function () {
-    skillsBox.classList.remove("animate");
-    void skillsBox.offsetWidth; // Memaksa reflow, sehingga animasi akan mulai dari awal
-    skillsBox.classList.add("animate");
+function showCard(index) {
+  cards.forEach((card) => {
+    card.style.transform = `translateX(-${index * 100}%)`;
   });
+}
+
+function showNextCard() {
+  if (currentIndex < cards.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  showCard(currentIndex);
+}
+
+function showPrevCard() {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = cards.length - 1;
+  }
+  showCard(currentIndex);
+}
+
+prevBtn.addEventListener("click", () => {
+  clearInterval(interval); // Hentikan otomatisasi ketika tombol diklik
+  showPrevCard();
 });
+
+nextBtn.addEventListener("click", () => {
+  clearInterval(interval); // Hentikan otomatisasi ketika tombol diklik
+  showNextCard();
+});
+
+// Fungsi untuk menggeser kartu secara otomatis setiap 3 detik
+function autoSlide() {
+  interval = setInterval(() => {
+    showNextCard();
+  }, 3000); // Ganti kartu setiap 3 detik (3000 milidetik)
+}
+
+autoSlide(); // Mulai otomatisasi saat halaman dimuat
