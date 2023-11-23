@@ -75,6 +75,7 @@ document
   });
 
 /*==================== Animation ====================*/
+
 const cards = document.querySelectorAll(".card");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
@@ -123,3 +124,20 @@ function autoSlide() {
 }
 
 autoSlide(); // Mulai otomatisasi saat halaman dimuat
+
+/*==================== Music Player ====================*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const audio = document.getElementById("music");
+  const playButton = document.querySelector(".controls .play-button");
+
+  playButton.addEventListener("click", function () {
+    if (audio.paused) {
+      audio.play();
+      playButton.innerHTML = '<i class="ri-pause-line ri-1x"></i>';
+    } else {
+      audio.pause();
+      playButton.innerHTML = '<i class="ri-play-line ri-1x"></i>';
+    }
+  });
+});

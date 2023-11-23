@@ -542,6 +542,83 @@ i {
   border-radius: 100px;
 }
 
+/*=============== MUSIC PLAYER ===============*/
+
+.music-player {
+  margin-left: 50px;
+  margin-top: 10px;
+  background-color: var(--text-color-lighten);
+  border-radius: 0.75rem;
+  padding: 10px;
+}
+
+.box-player {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.box-player figure.albumn-cover {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.box-player figure.albumn-cover img {
+  border-radius: 0.75rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.track-name {
+  padding: 0.75rem;
+  line-height: 1.5rem;
+}
+
+.track-name a {
+  color: var(--title-color);
+  text-decoration: none;
+}
+
+.track-name a:hover {
+  text-decoration: underline;
+}
+
+.track-name h1 {
+  font-size: var(--small-font-size);
+  font-weight: 600;
+}
+
+.track-name h2 {
+  font-size: var(--smaller-font-size);
+  font-weight: 300;
+  color: var(--title-color);
+  text-align: left;
+}
+
+.track-name h2 a {
+  color: var(--title-color);
+}
+
+.track-name h2 a:hover {
+  color: var(--lavenderpurple);
+}
+
+.controls {
+  color: var(--title-color);
+}
+
+.controls a {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0 0.75rem;
+}
+
+.controls a:hover {
+  color: var(--lavenderpurple);
+}
+
 /*=============== FEEDS ===============*/
 
 .avator {
