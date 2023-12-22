@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800&display=swap");
 
 :root {
-  --hue: 60;
-  --sat: 7%;
-  --lig: 95%;
+  --hue: 30;
+  --sat: 100%;
+  --lig: 97%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
   --title-color: hsl(var(--hue), 12%, 15%);
@@ -12,14 +12,11 @@
   --text-color-lighten: hsl(var(--hue), 8%, 92%);
   --body-color: hsl(var(--hue), 100%, 99%);
   --container-color: #fff;
-  --golden-yellow: #f2c744;
-  --fuchsia-red: #f20544;
-  --bright-blue: #0554f2;
-  --lavenderpurple: #7d6bbf;
-  --turquoiseblue: #3dd9ad;
+  --turquoiseblue: #00aeb7;
+  --VividOrange: #ff7212;
+  --BrightYellow: #ffbe3b;
 
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Lexend Deca", sans-serif;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -167,13 +164,16 @@ img {
 .profile__button {
   display: flex;
   text-align: center;
+  justify-content: center;
 }
 
 .btn {
   width: 100%;
   text-decoration: none;
-  background-color: var(--text-color-lighten);
-  color: var(--title-color);
+  /* background-color: var(--text-color-lighten);
+  color: var(--title-color); */
+  background-color: var(--turquoiseblue);
+  color: var(--container-color);
   font-size: var(--small-font-size);
   font-family: var(--body-font);
   font-weight: 500;
@@ -184,28 +184,28 @@ img {
 }
 
 .bmail:hover {
-  background-color: var(--bright-blue);
+  background-color: var(--BrightYellow);
   color: var(--container-color);
 }
 
 .btn_menu {
-  background-color: var(--text-color-lighten);
-  font-size: 18px;
+  font-size: var(--h2-font-size);
   color: var(--title-color);
   text-decoration: none;
-  padding: 0.5rem;
-  border-radius: 0.75rem;
-  width: 100px;
-  cursor: pointer;
-  transition: 0.3s;
+  padding: 0.2rem 0;
+  transition: transform 0.7s ease;
 }
 
 .btn_menu:hover {
-  background-color: var(--golden-yellow);
+  transform: rotate(180deg) scale(1.25);
+}
+
+.follow:hover {
+  background-color: var(--VividOrange);
 }
 
 .unfollow {
-  background-color: var(--fuchsia-red);
+  background-color: var(--VividOrange);
   color: var(--container-color);
 }
 
@@ -213,7 +213,7 @@ img {
 
 .notification {
   display: none;
-  background-color: var(--bright-blue);
+  background-color: var(--BrightYellow);
   color: var(--container-color);
   border-radius: 0.75rem;
   padding: 10px 20px;
@@ -262,7 +262,8 @@ i {
 /*=============== FILTERS TABS ===============*/
 .filters__content {
   margin: 2rem 0 2rem;
-  background-color: var(--text-color-lighten);
+  /* background-color: var(--text-color-lighten); */
+  background-color: var(--turquoiseblue);
   padding: 0.375rem;
   border-radius: 0.75rem;
   display: flex;
@@ -275,7 +276,7 @@ i {
   border: none;
   outline: none;
   padding: 0.75rem;
-  color: var(--title-color);
+  color: var(--container-color);
   font-size: var(--small-font-size);
   font-family: var(--body-font);
   font-weight: 500;
@@ -287,6 +288,7 @@ i {
 
 .filters__button:hover {
   background-color: var(--body-color);
+  color: var(--title-color);
 }
 
 .filters__content {
@@ -429,14 +431,14 @@ i {
 }
 
 .close:hover {
-  color: var(--first-color);
+  color: var(--VividOrange);
 }
 
 .post {
   display: flex;
   align-items: flex-start;
   background-color: var(--body-color);
-  border-radius: 0.55rem;
+  border-radius: 0.75rem;
   position: relative;
   max-width: 490px;
   padding: 30px;
@@ -486,12 +488,12 @@ i {
 .post-icons a {
   font-size: 1.5rem;
   color: var(--title-color);
-  margin-right: 1rem;
+  margin-right: 0.4rem;
   text-decoration: none;
 }
 
 .post-icons a:hover {
-  color: var(--first-color);
+  color: var(--VividOrange);
 }
 
 /*=============== SKILLS ===============*/
@@ -501,12 +503,6 @@ i {
   row-gap: 3rem;
 }
 
-/* .skills__title {
-  font-size: var(--h3-font-size);
-  text-align: center;
-  margin-bottom: 1.5rem;
-} */
-
 .skills__box {
   display: flex;
   justify-content: center;
@@ -514,14 +510,12 @@ i {
 
 .skills__group {
   display: flex;
-  /* flex-wrap: wrap; */
   align-content: flex-start;
   column-gap: 1.5rem;
 }
 
 .skills__data {
   display: flex;
-  /* margin: 5px; */
 }
 
 .skill__img {
@@ -600,7 +594,7 @@ i {
 }
 
 .track-name h2 a:hover {
-  color: var(--lavenderpurple);
+  color: var(--turquoiseblue);
 }
 
 .controls {
@@ -616,7 +610,7 @@ i {
 }
 
 .controls a:hover {
-  color: var(--lavenderpurple);
+  color: var(--turquoiseblue);
 }
 
 /*=============== FEEDS ===============*/
@@ -665,12 +659,12 @@ i {
 .feeds-button a {
   font-size: 1.5rem;
   /* color: var(--title-color); */
-  margin-right: 1rem;
+  margin-right: 0.4rem;
   text-decoration: none;
 }
 
 .feeds-button a:hover {
-  color: var(--fuchsia-red);
+  color: var(--VividOrange);
 }
 
 .feedsnormal {
@@ -678,7 +672,7 @@ i {
 }
 
 .heart-filled {
-  color: var(--fuchsia-red); /* Ganti warna sesuai keinginan Anda */
+  color: var(--VividOrange); /* Ganti warna sesuai keinginan Anda */
 }
 
 /*=============== FOOTER ===============*/
@@ -790,7 +784,7 @@ footer {
 }
 
 .sbutton:hover {
-  background-color: var(--lavenderpurple);
+  background-color: var(--BrightYellow);
   color: var(--container-color);
 }
 
