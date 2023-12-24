@@ -15,6 +15,7 @@
   --turquoiseblue: #00aeb7;
   --VividOrange: #ff7212;
   --BrightYellow: #ffbe3b;
+  --IntenseRed: #ff1744;
 
   /*========== Font and typography ==========*/
   --body-font: "Lexend Deca", sans-serif;
@@ -184,8 +185,8 @@ img {
 }
 
 .bmail:hover {
-  background-color: var(--BrightYellow);
-  color: var(--container-color);
+  background-color: var(--text-color-lighten);
+  color: var(--title-color);
 }
 
 .btn_menu {
@@ -193,11 +194,16 @@ img {
   color: var(--title-color);
   text-decoration: none;
   padding: 0.2rem 0;
+  cursor: pointer;
   transition: transform 0.7s ease;
 }
 
 .btn_menu:hover {
   transform: rotate(180deg) scale(1.25);
+}
+
+.follow {
+  background-color: var(--BrightYellow);
 }
 
 .follow:hover {
@@ -287,7 +293,7 @@ i {
 }
 
 .filters__button:hover {
-  background-color: var(--body-color);
+  background-color: var(--text-color-lighten);
   color: var(--title-color);
 }
 
@@ -317,7 +323,7 @@ i {
 }
 
 .gallery-image {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -412,7 +418,7 @@ i {
   visibility: hidden;
   opacity: 0;
   background-color: rgba(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .overlay:target {
@@ -480,8 +486,8 @@ i {
 }
 
 .post-img img {
-  width: 100%;
-  height: 250px;
+  width: 22.938rem;
+  height: 15.625rem;
   transform: none !important;
 }
 
@@ -493,13 +499,13 @@ i {
 }
 
 .post-icons a:hover {
-  color: var(--VividOrange);
+  color: var(--IntenseRed);
 }
 
 /*=============== SKILLS ===============*/
 
 .skills__content {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   row-gap: 3rem;
 }
 
@@ -594,7 +600,7 @@ i {
 }
 
 .track-name h2 a:hover {
-  color: var(--turquoiseblue);
+  color: var(--IntenseRed);
 }
 
 .controls {
@@ -607,10 +613,11 @@ i {
   text-align: center;
   font-size: 1.5rem;
   padding: 0 0.75rem;
+  cursor: pointer;
 }
 
 .controls a:hover {
-  color: var(--turquoiseblue);
+  color: var(--IntenseRed);
 }
 
 /*=============== FEEDS ===============*/
@@ -622,7 +629,7 @@ i {
 
 .feeds-wrap {
   max-width: 490px;
-  padding: 10px;
+  padding: 10px 5px;
 }
 
 .feeds-header {
@@ -661,10 +668,11 @@ i {
   /* color: var(--title-color); */
   margin-right: 0.4rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .feeds-button a:hover {
-  color: var(--VividOrange);
+  color: var(--IntenseRed);
 }
 
 .feedsnormal {
@@ -672,7 +680,7 @@ i {
 }
 
 .heart-filled {
-  color: var(--VividOrange); /* Ganti warna sesuai keinginan Anda */
+  color: var(--IntenseRed); /* Ganti warna sesuai keinginan Anda */
 }
 
 /*=============== FOOTER ===============*/
@@ -781,6 +789,7 @@ footer {
   border-radius: 0.75rem;
   transition: 0.3s;
   border: none;
+  cursor: pointer;
 }
 
 .sbutton:hover {
@@ -795,7 +804,7 @@ footer {
     width: 70%;
   }
   .popup {
-    width: 70%;
+    width: 90%;
   }
 }
 
