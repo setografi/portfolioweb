@@ -64,14 +64,19 @@ document
     document.execCommand("copy");
     document.body.removeChild(tempInput);
 
+    this.classList.toggle("emailcopied");
+    this.textContent = this.classList.contains("emailcopied")
+      ? "Email Copied"
+      : "Contact Me";
+
     // Menampilkan notifikasi
-    var notification = document.getElementById("notification");
-    notification.style.display = "block";
+    // var notification = document.getElementById("notification");
+    // notification.style.display = "block";
 
     // Menghilangkan notifikasi setelah beberapa detik
-    setTimeout(function () {
-      notification.style.display = "none";
-    }, 3000); // Notifikasi akan menghilang setelah 3 detik
+    // setTimeout(function () {
+    //   notification.style.display = "none";
+    // }, 3000); // Notifikasi akan menghilang setelah 3 detik
   });
 
 /*==================== Animation ====================*/
@@ -141,3 +146,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+/*==================== Dark Mode ====================*/
+
+document
+  .getElementById("darkModeToggle")
+  .addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+
+    // Toggle text based on dark mode
+    const professionText = document.getElementById("professionText");
+    if (document.body.classList.contains("dark-mode")) {
+      professionText.textContent = "Frontend Developer";
+    } else {
+      professionText.textContent = "Graphic Designer";
+    }
+  });

@@ -48,6 +48,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   line-height: 1.5;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .mobile {
@@ -189,6 +190,11 @@ img {
   color: var(--title-color);
 }
 
+.emailcopied {
+  background-color: var(--text-color-lighten);
+  color: var(--title-color);
+}
+
 .btn_menu {
   font-size: var(--h2-font-size);
   color: var(--title-color);
@@ -199,7 +205,7 @@ img {
 }
 
 .btn_menu:hover {
-  transform: rotate(180deg) scale(1.25);
+  transform: rotate(360deg) scale(1.25);
 }
 
 .follow {
@@ -318,9 +324,9 @@ i {
 
 /*=============== PROJECT ===============*/
 
-.project {
+/* .project {
   background-color: var(--body-color);
-}
+} */
 
 .gallery-image {
   padding-bottom: 20px;
@@ -795,6 +801,133 @@ footer {
 .sbutton:hover {
   background-color: var(--BrightYellow);
   color: var(--container-color);
+}
+
+/*=============== Dark Mode Styles ===============*/
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode {
+  h1,
+  h2,
+  h3,
+  p,
+  span,
+  i {
+    color: #fff;
+  }
+
+  .profile__border {
+    border-color: #fff;
+  }
+
+  .btn {
+    background-color: #fff;
+    color: #333;
+  }
+
+  .btn_menu {
+    color: #fff;
+  }
+
+  .bmail:hover {
+    background-color: #666;
+    color: #fff;
+  }
+
+  .emailcopied {
+    background-color: #666;
+    color: #fff;
+  }
+
+  .filters__content {
+    background-color: #fff;
+  }
+
+  .filters__button {
+    color: #333;
+  }
+
+  .feeds-header-info {
+    color: #fff;
+  }
+
+  .filters__button:hover {
+    background-color: #666;
+    color: #fff;
+  }
+
+  .avator {
+    background-color: #fff;
+    border-radius: 50px;
+  }
+
+  .post-text {
+    color: #333;
+  }
+
+  .post-user-info h3,
+  span {
+    color: #333;
+  }
+
+  .post-icons i {
+    color: #333;
+  }
+
+  .card {
+    background-color: #fff;
+  }
+
+  .card p {
+    color: #333;
+  }
+
+  .sbutton {
+    background-color: #444;
+  }
+
+  .sbutton:hover {
+    background-color: #666;
+  }
+
+  .follow {
+    background-color: #444;
+    color: #fff;
+  }
+
+  .follow:hover {
+    background-color: #666;
+    color: #fff;
+  }
+
+  .unfollow {
+    background-color: #444;
+    color: #fff;
+  }
+
+  .music-player {
+    background-color: #fff;
+  }
+
+  .track-name h2 {
+    color: #333;
+  }
+
+  .track-name h2 a:hover {
+    color: #666;
+  }
+
+  .play-button i {
+    color: #333;
+  }
+
+  .play-button i:hover {
+    color: #666;
+  }
 }
 
 /*=============== RESPON ===============*/
