@@ -159,6 +159,6 @@ document
     if (document.body.classList.contains("dark-mode")) {
       professionText.textContent = "Frontend Developer";
     } else {
-      professionText.textContent = "Graphic Designer";
+      professionText.textContent = "Designer + Developer";
     }
   });
