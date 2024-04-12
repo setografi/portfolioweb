@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>setografi</title>
     <meta charset="UTF-8" />
@@ -17,562 +17,118 @@
     />
   </head>
 
-  <body>
-    <div class="mobile">
-      <main>
-        <section class="section" id="about">
-          <div class="profile__container grid">
-            <div class="profile__data">
-              <div class="profile__border">
-                <div class="profile__perfil">
-                  <img src="./assets/img/PP-4-(no-text).jpg" alt="" />
-                </div>
-              </div>
-              <h2 class="profile__name">Wahyu Seto Pranata</h2>
-              <h3 class="profile__prosfession" id="professionText">
-                Designer + Developer
-              </h3>
-            </div>
-
-            <div class="profile__info grid">
-              <div class="profile__info-group">
-                <h3 class="profile__info-number">3</h3>
-                <p class="profile__info-description">
-                  Years of <br />
-                  work
-                </p>
-              </div>
-              <div class="profile__info-group">
-                <h3 class="profile__info-number">71</h3>
-                <p class="profile__info-description">
-                  Completed <br />
-                  projects
-                </p>
-              </div>
-              <div class="profile__info-group">
-                <h3 class="profile__info-number">155</h3>
-                <p class="profile__info-description">
-                  Satisfied <br />
-                  customers
-                </p>
+  <body class="mobile">
+    <main>
+      <section class="section" id="about">
+        <div class="profile__container grid">
+          <div class="profile__data">
+            <div class="profile__border">
+              <div class="profile__perfil">
+                <img src="./assets/img/PP-4-(no-text).jpg" alt="" />
               </div>
             </div>
+            <h2 class="profile__name">Wahyu Seto Pranata</h2>
+            <h3 class="profile__prosfession" id="professionText">
+              Designer + Developer
+            </h3>
+          </div>
 
-            <div class="profile__button grid">
-              <a class="btn follow" id="followButton">Follow</a>
-              <a
-                class="btn bmail"
-                href="mailto:youremail@example.com"
-                id="contactButton"
-                >Contact Me</a
-              >
-
-              <a class="btn_menu" id="darkModeToggle">
-                <i class="ri-moon-line ri-1x"></i>
-              </a>
+          <div class="profile__info grid">
+            <div class="profile__info-group">
+              <h3 class="profile__info-number">3</h3>
+              <p class="profile__info-description">
+                Years of <br />
+                work
+              </p>
+            </div>
+            <div class="profile__info-group">
+              <h3 class="profile__info-number">71</h3>
+              <p class="profile__info-description">
+                Completed <br />
+                projects
+              </p>
+            </div>
+            <div class="profile__info-group">
+              <h3 class="profile__info-number">155</h3>
+              <p class="profile__info-description">
+                Satisfied <br />
+                customers
+              </p>
             </div>
           </div>
-          <!-- <div class="notification" id="notification">Email copied!</div> -->
-        </section>
 
-        <section>
-          <div class="skills__container">
-            <!--=============== FILTERS TABS ===============-->
-            <ul class="filters__content">
-              <button class="filters__button" id="button_a">Projects</button>
+          <div class="profile__button grid">
+            <a class="btn follow" id="followButton">Follow</a>
+            <a
+              class="btn bmail"
+              href="mailto:youremail@example.com"
+              id="contactButton"
+              >Contact Me</a
+            >
 
-              <button class="filters__button" id="button_b">Skills</button>
+            <a class="btn_menu" id="darkModeToggle">
+              <i class="ri-moon-line ri-1x"></i>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="notification" id="notification">Email copied!</div> -->
+      </section>
 
-              <button class="filters__button" id="button_c">About</button>
-            </ul>
+      <section>
+        <div class="skills__container">
+          <!--=============== FILTERS TABS ===============-->
+          <ul class="filters__content">
+            <button class="filters__button" id="button_a">Projects</button>
 
-            <div class="content">
-              <!-- PROJECT -->
-              <div id="content_a" class="skills__list">
-                <div class="project" data-content id="projects">
-                  <div class="gallery-image">
-                    <div class="img-box">
-                      <img src="assets/img/toketa_cake.png" alt="" />
-                      <div class="transparent-box">
-                        <div class="caption">
-                          <a href="#popup1"
-                            >Toketa Cake Logo and Poster Design</a
-                          >
-                          <p class="opacity-low">Click title for more...</p>
-                        </div>
+            <button class="filters__button" id="button_b">Skills</button>
 
-                        <div id="popup1" class="overlay">
-                          <div class="popup">
-                            <div class="post">
-                              <div class="user-avatar">
-                                <img
-                                  src="assets/img/PP-4-(no-text).jpg"
-                                  alt=""
-                                />
-                              </div>
+            <button class="filters__button" id="button_c">About</button>
+          </ul>
 
-                              <div class="post-content">
-                                <div class="post-user-info">
-                                  <h3>Setografi</h3>
-                                  <span>. December 18, 2021</span>
-
-                                  <a href="#projects" class="close">&times;</a>
-                                </div>
-
-                                <p class="post-text">
-                                  Toketa Cake is a business specializing in
-                                  sweet delicacies located in Bintan Regency.
-                                  Here, I am responsible for creating Graphic
-                                  Designs for Toketa Cake's social media needs.
-                                </p>
-
-                                <div class="post-img">
-                                  <img
-                                    src="assets/img/toketa_cake.png"
-                                    alt=""
-                                  />
-                                </div>
-
-                                <div class="post-icons">
-                                  <a><i class="ri-heart-3-line ri-1x"></i></a>
-                                  <a
-                                    ><i class="ri-share-forward-line ri-1x"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+          <div class="content">
+            <!-- PROJECT -->
+            <div id="content_a" class="skills__list">
+              <div class="project" data-content id="projects">
+                <div class="gallery-image">
+                  <div class="img-box">
+                    <img src="assets/img/toketa_cake.png" alt="" />
+                    <div class="transparent-box">
+                      <div class="caption">
+                        <a href="#popup1">Toketa Cake Logo and Poster Design</a>
+                        <p class="opacity-low">Click title for more...</p>
                       </div>
-                    </div>
 
-                    <div class="img-box">
-                      <img src="assets/img/setan_gurih.png" alt="" />
-                      <div class="transparent-box">
-                        <div class="caption">
-                          <a href="#popup2">Setan Gurih Logo Band</a>
-                          <p class="opacity-low">Click title for more...</p>
-                        </div>
-
-                        <div id="popup2" class="overlay">
-                          <div class="popup">
-                            <div class="post">
-                              <div class="user-avatar">
-                                <img
-                                  src="assets/img/PP-4-(no-text).jpg"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div class="post-content">
-                                <div class="post-user-info">
-                                  <h3>Setografi</h3>
-                                  <span>. April 09, 2023</span>
-
-                                  <a href="#projects" class="close">&times;</a>
-                                </div>
-
-                                <p class="post-text">
-                                  Setan Gurih is a newly debuted band in East
-                                  Jakarta, formed by four college students. The
-                                  logo was created simultaneously with the
-                                  band's debut and has become the iconic symbol
-                                  of Setan Gurih.
-                                </p>
-
-                                <div class="post-img">
-                                  <img
-                                    src="assets/img/setan_gurih.png"
-                                    alt=""
-                                  />
-                                </div>
-
-                                <div class="post-icons">
-                                  <a><i class="ri-heart-3-line ri-1x"></i></a>
-                                  <a
-                                    ><i class="ri-share-forward-line ri-1x"></i
-                                  ></a>
-                                </div>
-                              </div>
+                      <div id="popup1" class="overlay">
+                        <div class="popup">
+                          <div class="post">
+                            <div class="user-avatar">
+                              <img src="assets/img/PP-4-(no-text).jpg" alt="" />
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
 
-                    <div class="img-box">
-                      <img src="assets/img/SoreLogo.png" alt="" />
-                      <div class="transparent-box">
-                        <div class="caption">
-                          <a href="#popup3">SORE Pixel Crafters Logo</a>
-                          <p class="opacity-low">Click title for more...</p>
-                        </div>
+                            <div class="post-content">
+                              <div class="post-user-info">
+                                <h3>Setografi</h3>
+                                <span>. December 18, 2021</span>
 
-                        <div id="popup3" class="overlay">
-                          <div class="popup">
-                            <div class="post">
-                              <div class="user-avatar">
-                                <img
-                                  src="assets/img/PP-4-(no-text).jpg"
-                                  alt=""
-                                />
+                                <a href="#projects" class="close">&times;</a>
                               </div>
 
-                              <div class="post-content">
-                                <div class="post-user-info">
-                                  <h3>Setografi</h3>
-                                  <span>. November 05, 2023</span>
+                              <p class="post-text">
+                                Toketa Cake is a business specializing in sweet
+                                delicacies located in Bintan Regency. Here, I am
+                                responsible for creating Graphic Designs for
+                                Toketa Cake's social media needs.
+                              </p>
 
-                                  <a href="#projects" class="close">&times;</a>
-                                </div>
-
-                                <p class="post-text">
-                                  I took on the challenge of creating a logo for
-                                  SORE Pixel Crafters which is a digital agency
-                                  specializing in UI/UX Design and Web
-                                  Development.
-                                </p>
-
-                                <div class="post-img">
-                                  <img src="assets/img/SoreLogo2.jpeg" alt="" />
-                                </div>
-
-                                <div class="post-icons">
-                                  <a><i class="ri-heart-3-line ri-1x"></i></a>
-                                  <a
-                                    ><i class="ri-share-forward-line ri-1x"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="img-box">
-                      <img src="assets/img/SerenityLogo.png" alt="" />
-                      <div class="transparent-box">
-                        <div class="caption">
-                          <a href="#popup4">Serenity Logo</a>
-                          <p class="opacity-low">Click title for more...</p>
-                        </div>
-
-                        <div id="popup4" class="overlay">
-                          <div class="popup">
-                            <div class="post">
-                              <div class="user-avatar">
-                                <img
-                                  src="assets/img/PP-4-(no-text).jpg"
-                                  alt=""
-                                />
+                              <div class="post-img">
+                                <img src="assets/img/toketa_cake.png" alt="" />
                               </div>
 
-                              <div class="post-content">
-                                <div class="post-user-info">
-                                  <h3>Setografi</h3>
-                                  <span>. June 20, 2023</span>
-
-                                  <a href="#projects" class="close">&times;</a>
-                                </div>
-
-                                <p class="post-text">
-                                  Serenity is an innovative mobile application
-                                  specifically designed to explore and discover
-                                  various interesting places in Jakarta. With
-                                  this app, users will receive recommendations
-                                  for places to visit based on various
-                                  categories, including popular tourist spots,
-                                  unique coffee shops, delicious restaurants,
-                                  and much more. Here, I am given the
-                                  opportunity to design the logo for this
-                                  appealing app.
-                                </p>
-
-                                <div class="post-img">
-                                  <img
-                                    src="assets/img/SerenityLogo2.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-
-                                <div class="post-icons">
-                                  <a><i class="ri-heart-3-line ri-1x"></i></a>
-                                  <a
-                                    ><i class="ri-share-forward-line ri-1x"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="img-box">
-                      <img src="assets/img/KontenIG.png" alt="" />
-                      <div class="transparent-box">
-                        <div class="caption">
-                          <a href="#popup5">Instagram Setografi Content</a>
-                          <p class="opacity-low">Click title for more...</p>
-                        </div>
-
-                        <div id="popup5" class="overlay">
-                          <div class="popup">
-                            <div class="post">
-                              <div class="user-avatar">
-                                <img
-                                  src="assets/img/PP-4-(no-text).jpg"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div class="post-content">
-                                <div class="post-user-info">
-                                  <h3>Setografi</h3>
-                                  <span>. Just now</span>
-
-                                  <a href="#projects" class="close">&times;</a>
-                                </div>
-
-                                <p class="post-text">
-                                  I am designing typographic content for my
-                                  personal Instagram account called "Setografi.
-                                </p>
-
-                                <div class="post-img">
-                                  <img src="assets/img/KontenIG2.png" alt="" />
-                                </div>
-
-                                <div class="post-icons">
-                                  <a><i class="ri-heart-3-line ri-1x"></i></a>
-                                  <a
-                                    ><i class="ri-share-forward-line ri-1x"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="img-box">
-                      <img src="assets/img/pondok_santai1.jpeg" alt="" />
-                      <div class="transparent-box">
-                        <div class="caption">
-                          <a href="#popup6">Entspannt Cottage Design</a>
-                          <p class="opacity-low">Click title for more...</p>
-                        </div>
-
-                        <div id="popup6" class="overlay">
-                          <div class="popup">
-                            <div class="post">
-                              <div class="user-avatar">
-                                <img
-                                  src="assets/img/PP-4-(no-text).jpg"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div class="post-content">
-                                <div class="post-user-info">
-                                  <h3>Setografi</h3>
-                                  <span>. October 19, 2022</span>
-
-                                  <a href="#projects" class="close">&times;</a>
-                                </div>
-
-                                <p class="post-text">
-                                  The coastal area of Sebauk, Senggarang is
-                                  currently empty without any buildings or
-                                  facilities, despite its attractive scenery.
-                                  Therefore, there is a plan to design a Public
-                                  Facility named "Pondok Entspannt" or "Pondok
-                                  Santai" to enhance the appeal of the area and
-                                  provide a relaxing spot for visitors. The
-                                  creation process involves using Adobe
-                                  Photoshop for the initial design and then
-                                  utilizing Blender 3D and Autodesk 3ds Max for
-                                  the 3D rendering.
-                                </p>
-
-                                <div class="post-img">
-                                  <img
-                                    src="assets/img/pondok_santai2.jpeg"
-                                    alt=""
-                                  />
-                                </div>
-
-                                <div class="post-icons">
-                                  <a><i class="ri-heart-3-line ri-1x"></i></a>
-                                  <a
-                                    ><i class="ri-share-forward-line ri-1x"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="img-box">
-                      <img
-                        src="assets/img/sorehomeview.png"
-                        alt="SORE Pixel Crafters"
-                      />
-                      <div class="transparent-box">
-                        <div class="caption">
-                          <a href="#popup7">SORE Pixel Crafters</a>
-                          <p class="opacity-low">Click title for more...</p>
-                        </div>
-
-                        <div id="popup7" class="overlay">
-                          <div class="popup">
-                            <div class="post">
-                              <div class="user-avatar">
-                                <img
-                                  src="assets/img/PP-4-(no-text).jpg"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div class="post-content">
-                                <div class="post-user-info">
-                                  <h3>Setografi</h3>
-                                  <span>. February, 2024</span>
-
-                                  <a href="#projects" class="close">&times;</a>
-                                </div>
-
-                                <p class="post-text">
-                                  SORE Pixel Crafters is a digital agency that
-                                  specializes in UI/UX Design and Web
-                                  Development.
-                                </p>
-
-                                <div class="post-img">
-                                  <img
-                                    src="assets/img/sorefullview.png"
-                                    alt="SORE Pixel Crafters"
-                                  />
-                                </div>
-
-                                <div class="post-icons">
-                                  <a><i class="ri-heart-3-line ri-1x"></i></a>
-                                  <a
-                                    ><i class="ri-share-forward-line ri-1x"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="img-box">
-                      <img
-                        src="assets/img/intechhomeview.png"
-                        alt="Intech Computerizer Web"
-                      />
-                      <div class="transparent-box">
-                        <div class="caption">
-                          <a href="#popup8">Intech Computerizer</a>
-                          <p class="opacity-low">Click title for more...</p>
-                        </div>
-
-                        <div id="popup8" class="overlay">
-                          <div class="popup">
-                            <div class="post">
-                              <div class="user-avatar">
-                                <img
-                                  src="assets/img/PP-4-(no-text).jpg"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div class="post-content">
-                                <div class="post-user-info">
-                                  <h3>Setografi</h3>
-                                  <span>. November 21, 2023</span>
-
-                                  <a href="#projects" class="close">&times;</a>
-                                </div>
-
-                                <p class="post-text">
-                                  Find your dream laptop and professional
-                                  service.
-                                </p>
-
-                                <div class="post-img">
-                                  <img
-                                    src="assets/img/intechfullview.png"
-                                    alt="Intech Computerizer Web"
-                                  />
-                                </div>
-
-                                <div class="post-icons">
-                                  <a><i class="ri-heart-3-line ri-1x"></i></a>
-                                  <a
-                                    ><i class="ri-share-forward-line ri-1x"></i
-                                  ></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="img-box">
-                      <img
-                        src="assets/img/luxspacehomeview.png"
-                        alt="LuxSpace Furniture App"
-                      />
-                      <div class="transparent-box">
-                        <div class="caption">
-                          <a href="#popup9">LuxSpace Furniture App</a>
-                          <p class="opacity-low">Click title for more...</p>
-                        </div>
-
-                        <div id="popup9" class="overlay">
-                          <div class="popup">
-                            <div class="post">
-                              <div class="user-avatar">
-                                <img
-                                  src="assets/img/PP-4-(no-text).jpg"
-                                  alt=""
-                                />
-                              </div>
-
-                              <div class="post-content">
-                                <div class="post-user-info">
-                                  <h3>Setografi</h3>
-                                  <span>. December 30, 2023</span>
-
-                                  <a href="#projects" class="close">&times;</a>
-                                </div>
-
-                                <p class="post-text">
-                                  We provide classy furniture that makes the
-                                  room feel homey.
-                                </p>
-
-                                <div class="post-img">
-                                  <img
-                                    src="assets/img/luxspacefullview.png"
-                                    alt="LuxSpace Furniture App"
-                                  />
-                                </div>
-
-                                <div class="post-icons">
-                                  <a><i class="ri-heart-3-line ri-1x"></i></a>
-                                  <a
-                                    ><i class="ri-share-forward-line ri-1x"></i
-                                  ></a>
-                                </div>
+                              <div class="post-icons">
+                                <a><i class="ri-heart-3-line ri-1x"></i></a>
+                                <a
+                                  ><i class="ri-share-forward-line ri-1x"></i
+                                ></a>
                               </div>
                             </div>
                           </div>
@@ -580,350 +136,753 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <!-- SKIIL -->
-              <div id="content_b" class="skills__list">
-                <div class="skills__content grid" data-content id="skill">
-                  <div class="skills__area">
-                    <div class="feeds-wrap">
-                      <div class="feeds-header">
-                        <img
-                          src="./assets/img/PP-4-(no-text).jpg"
-                          alt=""
-                          class="avator skillimg"
-                        />
-                        <div class="feeds-header-info">
-                          Setografi<span>. 5m ago</span>
-                          <p>
-                            I have some skills in graphic design and frontend
-                            developer.
-                          </p>
-                        </div>
+                  <div class="img-box">
+                    <img src="assets/img/setan_gurih.png" alt="" />
+                    <div class="transparent-box">
+                      <div class="caption">
+                        <a href="#popup2">Setan Gurih Logo Band</a>
+                        <p class="opacity-low">Click title for more...</p>
                       </div>
 
-                      <div class="slider">
-                        <div class="card" data-card="1">
-                          <img
-                            src="assets/img/skill/adobephotoshop-color.svg"
-                            alt="Image 1"
-                          />
-                          <p>Adobe Photoshop</p>
-                        </div>
-                        <div class="card" data-card="2">
-                          <img
-                            src="assets/img/skill/adobeillustrator-color.svg"
-                            alt="Image 2"
-                          />
-                          <p>Adobe Illustrator</p>
-                        </div>
-                        <div class="card" data-card="3">
-                          <img
-                            src="assets/img/skill/coreldraw_icon_132464.svg"
-                            alt="Image 3"
-                          />
-                          <p>CorelDraw</p>
-                        </div>
-                        <div class="card" data-card="4">
-                          <img
-                            src="assets/img/skill/canva-color.svg"
-                            alt="Image 4"
-                          />
-                          <p>Canva</p>
-                        </div>
-                        <div class="card" data-card="5">
-                          <img
-                            src="assets/img/skill/figma-color.svg"
-                            alt="Image 5"
-                          />
-                          <p>Figma</p>
-                        </div>
-                        <div class="card" data-card="6">
-                          <img
-                            src="assets/img/skill/blender-color.svg"
-                            alt="Image 6"
-                          />
-                          <p>Blender</p>
-                        </div>
-                        <div class="card" data-card="7">
-                          <img
-                            src="assets/img/skill/html5-color.svg"
-                            alt="Image 7"
-                          />
-                          <p>HTML</p>
-                        </div>
-                        <div class="card" data-card="8">
-                          <img
-                            src="assets/img/skill/css3-color.svg"
-                            alt="Image 8"
-                          />
-                          <p>CSS</p>
-                        </div>
-                        <div class="card" data-card="9">
-                          <img
-                            src="assets/img/skill/javascript-color.svg"
-                            alt="Image 9"
-                          />
-                          <p>JavaScript</p>
-                        </div>
-                        <div class="card" data-card="10">
-                          <img
-                            src="assets/img/skill/react-color.svg"
-                            alt="Image 10"
-                          />
-                          <p>React</p>
-                        </div>
-                        <div class="card" data-card="11">
-                          <img
-                            src="assets/img/skill/tailwindcss-color.svg"
-                            alt="Image 11"
-                          />
-                          <p>Tailwind CSS</p>
-                        </div>
-                        <div class="card" data-card="12">
-                          <img
-                            src="assets/img/skill/bootstrap-color.svg"
-                            alt="Image 12"
-                          />
-                          <p>Bootstrap</p>
-                        </div>
-                        <div class="card" data-card="13">
-                          <img
-                            src="assets/img/skill/elixir-color.svg"
-                            alt="Image 13"
-                          />
-                          <p>Elixir</p>
-                        </div>
-                        <div class="card" data-card="14">
-                          <img
-                            src="assets/img/skill/phoenixframework-color.svg"
-                            alt="Image 14"
-                          />
-                          <p>Phoenix Framework</p>
-                        </div>
-                      </div>
+                      <div id="popup2" class="overlay">
+                        <div class="popup">
+                          <div class="post">
+                            <div class="user-avatar">
+                              <img src="assets/img/PP-4-(no-text).jpg" alt="" />
+                            </div>
 
-                      <div class="slider-button">
-                        <button class="sbutton" id="prevBtn">
-                          <i class="ri-arrow-left-s-line"></i>
-                        </button>
-                        <button class="sbutton" id="nextBtn">
-                          <i class="ri-arrow-right-s-line"></i>
-                        </button>
-                      </div>
+                            <div class="post-content">
+                              <div class="post-user-info">
+                                <h3>Setografi</h3>
+                                <span>. April 09, 2023</span>
 
-                      <div class="feeds-info-counts">
-                        <div class="feeds-button">
-                          <a class="heartButton feedsnormal"
-                            ><i class="ri-heart-3-line ri-1x"></i
-                          ></a>
-                          <a class="feedsnormal" target="_blank"
-                            ><i class="ri-share-forward-line ri-1x"></i
-                          ></a>
+                                <a href="#projects" class="close">&times;</a>
+                              </div>
+
+                              <p class="post-text">
+                                Setan Gurih is a newly debuted band in East
+                                Jakarta, formed by four college students. The
+                                logo was created simultaneously with the band's
+                                debut and has become the iconic symbol of Setan
+                                Gurih.
+                              </p>
+
+                              <div class="post-img">
+                                <img src="assets/img/setan_gurih.png" alt="" />
+                              </div>
+
+                              <div class="post-icons">
+                                <a><i class="ri-heart-3-line ri-1x"></i></a>
+                                <a
+                                  ><i class="ri-share-forward-line ri-1x"></i
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
 
-              <!-- ABOUT -->
-              <div id="content_c" class="skills__list">
-                <div class="feeds-wrap">
-                  <div class="feeds-header">
+                  <div class="img-box">
+                    <img src="assets/img/SoreLogo.png" alt="" />
+                    <div class="transparent-box">
+                      <div class="caption">
+                        <a href="#popup3">SORE Pixel Crafters Logo</a>
+                        <p class="opacity-low">Click title for more...</p>
+                      </div>
+
+                      <div id="popup3" class="overlay">
+                        <div class="popup">
+                          <div class="post">
+                            <div class="user-avatar">
+                              <img src="assets/img/PP-4-(no-text).jpg" alt="" />
+                            </div>
+
+                            <div class="post-content">
+                              <div class="post-user-info">
+                                <h3>Setografi</h3>
+                                <span>. November 05, 2023</span>
+
+                                <a href="#projects" class="close">&times;</a>
+                              </div>
+
+                              <p class="post-text">
+                                I took on the challenge of creating a logo for
+                                SORE Pixel Crafters which is a digital agency
+                                specializing in UI/UX Design and Web
+                                Development.
+                              </p>
+
+                              <div class="post-img">
+                                <img src="assets/img/SoreLogo2.jpeg" alt="" />
+                              </div>
+
+                              <div class="post-icons">
+                                <a><i class="ri-heart-3-line ri-1x"></i></a>
+                                <a
+                                  ><i class="ri-share-forward-line ri-1x"></i
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="img-box">
+                    <img src="assets/img/SerenityLogo.png" alt="" />
+                    <div class="transparent-box">
+                      <div class="caption">
+                        <a href="#popup4">Serenity Logo</a>
+                        <p class="opacity-low">Click title for more...</p>
+                      </div>
+
+                      <div id="popup4" class="overlay">
+                        <div class="popup">
+                          <div class="post">
+                            <div class="user-avatar">
+                              <img src="assets/img/PP-4-(no-text).jpg" alt="" />
+                            </div>
+
+                            <div class="post-content">
+                              <div class="post-user-info">
+                                <h3>Setografi</h3>
+                                <span>. June 20, 2023</span>
+
+                                <a href="#projects" class="close">&times;</a>
+                              </div>
+
+                              <p class="post-text">
+                                Serenity is an innovative mobile application
+                                specifically designed to explore and discover
+                                various interesting places in Jakarta. With this
+                                app, users will receive recommendations for
+                                places to visit based on various categories,
+                                including popular tourist spots, unique coffee
+                                shops, delicious restaurants, and much more.
+                                Here, I am given the opportunity to design the
+                                logo for this appealing app.
+                              </p>
+
+                              <div class="post-img">
+                                <img
+                                  src="assets/img/SerenityLogo2.jpeg"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div class="post-icons">
+                                <a><i class="ri-heart-3-line ri-1x"></i></a>
+                                <a
+                                  ><i class="ri-share-forward-line ri-1x"></i
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="img-box">
+                    <img src="assets/img/KontenIG.png" alt="" />
+                    <div class="transparent-box">
+                      <div class="caption">
+                        <a href="#popup5">Instagram Setografi Content</a>
+                        <p class="opacity-low">Click title for more...</p>
+                      </div>
+
+                      <div id="popup5" class="overlay">
+                        <div class="popup">
+                          <div class="post">
+                            <div class="user-avatar">
+                              <img src="assets/img/PP-4-(no-text).jpg" alt="" />
+                            </div>
+
+                            <div class="post-content">
+                              <div class="post-user-info">
+                                <h3>Setografi</h3>
+                                <span>. Just now</span>
+
+                                <a href="#projects" class="close">&times;</a>
+                              </div>
+
+                              <p class="post-text">
+                                I am designing typographic content for my
+                                personal Instagram account called "Setografi.
+                              </p>
+
+                              <div class="post-img">
+                                <img src="assets/img/KontenIG2.png" alt="" />
+                              </div>
+
+                              <div class="post-icons">
+                                <a><i class="ri-heart-3-line ri-1x"></i></a>
+                                <a
+                                  ><i class="ri-share-forward-line ri-1x"></i
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="img-box">
+                    <img src="assets/img/pondok_santai1.jpeg" alt="" />
+                    <div class="transparent-box">
+                      <div class="caption">
+                        <a href="#popup6">Entspannt Cottage Design</a>
+                        <p class="opacity-low">Click title for more...</p>
+                      </div>
+
+                      <div id="popup6" class="overlay">
+                        <div class="popup">
+                          <div class="post">
+                            <div class="user-avatar">
+                              <img src="assets/img/PP-4-(no-text).jpg" alt="" />
+                            </div>
+
+                            <div class="post-content">
+                              <div class="post-user-info">
+                                <h3>Setografi</h3>
+                                <span>. October 19, 2022</span>
+
+                                <a href="#projects" class="close">&times;</a>
+                              </div>
+
+                              <p class="post-text">
+                                The coastal area of Sebauk, Senggarang is
+                                currently empty without any buildings or
+                                facilities, despite its attractive scenery.
+                                Therefore, there is a plan to design a Public
+                                Facility named "Pondok Entspannt" or "Pondok
+                                Santai" to enhance the appeal of the area and
+                                provide a relaxing spot for visitors. The
+                                creation process involves using Adobe Photoshop
+                                for the initial design and then utilizing
+                                Blender 3D and Autodesk 3ds Max for the 3D
+                                rendering.
+                              </p>
+
+                              <div class="post-img">
+                                <img
+                                  src="assets/img/pondok_santai2.jpeg"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div class="post-icons">
+                                <a><i class="ri-heart-3-line ri-1x"></i></a>
+                                <a
+                                  ><i class="ri-share-forward-line ri-1x"></i
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="img-box">
                     <img
-                      src="./assets/img/about/spotify-color.svg"
-                      alt=""
-                      class="avator"
+                      src="assets/img/sorehomeview.png"
+                      alt="SORE Pixel Crafters"
                     />
-                    <div class="feeds-header-info">
-                      Spotify<span>. Just now</span>
-                      <p>
-                        Just songs from the playlist that I often listen to,
-                        enjoy.
-                      </p>
+                    <div class="transparent-box">
+                      <div class="caption">
+                        <a href="#popup7">SORE Pixel Crafters</a>
+                        <p class="opacity-low">Click title for more...</p>
+                      </div>
+
+                      <div id="popup7" class="overlay">
+                        <div class="popup">
+                          <div class="post">
+                            <div class="user-avatar">
+                              <img src="assets/img/PP-4-(no-text).jpg" alt="" />
+                            </div>
+
+                            <div class="post-content">
+                              <div class="post-user-info">
+                                <h3>Setografi</h3>
+                                <span>. February, 2024</span>
+
+                                <a href="#projects" class="close">&times;</a>
+                              </div>
+
+                              <p class="post-text">
+                                SORE Pixel Crafters is a digital agency that
+                                specializes in UI/UX Design and Web Development.
+                              </p>
+
+                              <div class="post-img">
+                                <img
+                                  src="assets/img/sorefullview.png"
+                                  alt="SORE Pixel Crafters"
+                                />
+                              </div>
+
+                              <div class="post-icons">
+                                <a><i class="ri-heart-3-line ri-1x"></i></a>
+                                <a
+                                  ><i class="ri-share-forward-line ri-1x"></i
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="music-player">
-                    <div class="box-player">
-                      <figure class="albumn-cover">
-                        <img
-                          src="assets/img/SL-072620-33020-15.jpg"
-                          alt="Night Sky with Moon Stars and Clouds Background"
-                        />
-                      </figure>
-                      <div class="track-name">
-                        <h1><a>BGM Soft Dream</a></h1>
-                        <h2>
-                          <span class="artist"
-                            ><a>NerusonF<br /></a
-                          ></span>
-                          &ndash;
-                          <span class="album"><a>フリーBGM</a></span>
-                        </h2>
+                  <div class="img-box">
+                    <img
+                      src="assets/img/intechhomeview.png"
+                      alt="Intech Computerizer Web"
+                    />
+                    <div class="transparent-box">
+                      <div class="caption">
+                        <a href="#popup8">Intech Computerizer</a>
+                        <p class="opacity-low">Click title for more...</p>
                       </div>
-                      <div class="controls">
-                        <a class="play-button"
-                          ><i class="ri-play-line ri-1x"></i
+
+                      <div id="popup8" class="overlay">
+                        <div class="popup">
+                          <div class="post">
+                            <div class="user-avatar">
+                              <img src="assets/img/PP-4-(no-text).jpg" alt="" />
+                            </div>
+
+                            <div class="post-content">
+                              <div class="post-user-info">
+                                <h3>Setografi</h3>
+                                <span>. November 21, 2023</span>
+
+                                <a href="#projects" class="close">&times;</a>
+                              </div>
+
+                              <p class="post-text">
+                                Find your dream laptop and professional service.
+                              </p>
+
+                              <div class="post-img">
+                                <img
+                                  src="assets/img/intechfullview.png"
+                                  alt="Intech Computerizer Web"
+                                />
+                              </div>
+
+                              <div class="post-icons">
+                                <a><i class="ri-heart-3-line ri-1x"></i></a>
+                                <a
+                                  ><i class="ri-share-forward-line ri-1x"></i
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="img-box">
+                    <img
+                      src="assets/img/luxspacehomeview.png"
+                      alt="LuxSpace Furniture App"
+                    />
+                    <div class="transparent-box">
+                      <div class="caption">
+                        <a href="#popup9">LuxSpace Furniture App</a>
+                        <p class="opacity-low">Click title for more...</p>
+                      </div>
+
+                      <div id="popup9" class="overlay">
+                        <div class="popup">
+                          <div class="post">
+                            <div class="user-avatar">
+                              <img src="assets/img/PP-4-(no-text).jpg" alt="" />
+                            </div>
+
+                            <div class="post-content">
+                              <div class="post-user-info">
+                                <h3>Setografi</h3>
+                                <span>. December 30, 2023</span>
+
+                                <a href="#projects" class="close">&times;</a>
+                              </div>
+
+                              <p class="post-text">
+                                We provide classy furniture that makes the room
+                                feel homey.
+                              </p>
+
+                              <div class="post-img">
+                                <img
+                                  src="assets/img/luxspacefullview.png"
+                                  alt="LuxSpace Furniture App"
+                                />
+                              </div>
+
+                              <div class="post-icons">
+                                <a><i class="ri-heart-3-line ri-1x"></i></a>
+                                <a
+                                  ><i class="ri-share-forward-line ri-1x"></i
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SKIIL -->
+            <div id="content_b" class="skills__list">
+              <div class="skills__content grid" data-content id="skill">
+                <div class="skills__area">
+                  <div class="feeds-wrap">
+                    <div class="feeds-header">
+                      <img
+                        src="./assets/img/PP-4-(no-text).jpg"
+                        alt=""
+                        class="avator skillimg"
+                      />
+                      <div class="feeds-header-info">
+                        Setografi<span>. 5m ago</span>
+                        <p>
+                          I have some skills in graphic design and frontend
+                          developer.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="slider">
+                      <div class="card" data-card="1">
+                        <img
+                          src="assets/img/skill/adobephotoshop-color.svg"
+                          alt="Image 1"
+                        />
+                        <p>Adobe Photoshop</p>
+                      </div>
+                      <div class="card" data-card="2">
+                        <img
+                          src="assets/img/skill/adobeillustrator-color.svg"
+                          alt="Image 2"
+                        />
+                        <p>Adobe Illustrator</p>
+                      </div>
+                      <div class="card" data-card="3">
+                        <img
+                          src="assets/img/skill/coreldraw_icon_132464.svg"
+                          alt="Image 3"
+                        />
+                        <p>CorelDraw</p>
+                      </div>
+                      <div class="card" data-card="4">
+                        <img
+                          src="assets/img/skill/canva-color.svg"
+                          alt="Image 4"
+                        />
+                        <p>Canva</p>
+                      </div>
+                      <div class="card" data-card="5">
+                        <img
+                          src="assets/img/skill/figma-color.svg"
+                          alt="Image 5"
+                        />
+                        <p>Figma</p>
+                      </div>
+                      <div class="card" data-card="6">
+                        <img
+                          src="assets/img/skill/blender-color.svg"
+                          alt="Image 6"
+                        />
+                        <p>Blender</p>
+                      </div>
+                      <div class="card" data-card="7">
+                        <img
+                          src="assets/img/skill/html5-color.svg"
+                          alt="Image 7"
+                        />
+                        <p>HTML</p>
+                      </div>
+                      <div class="card" data-card="8">
+                        <img
+                          src="assets/img/skill/css3-color.svg"
+                          alt="Image 8"
+                        />
+                        <p>CSS</p>
+                      </div>
+                      <div class="card" data-card="9">
+                        <img
+                          src="assets/img/skill/javascript-color.svg"
+                          alt="Image 9"
+                        />
+                        <p>JavaScript</p>
+                      </div>
+                      <div class="card" data-card="10">
+                        <img
+                          src="assets/img/skill/react-color.svg"
+                          alt="Image 10"
+                        />
+                        <p>React</p>
+                      </div>
+                      <div class="card" data-card="11">
+                        <img
+                          src="assets/img/skill/tailwindcss-color.svg"
+                          alt="Image 11"
+                        />
+                        <p>Tailwind CSS</p>
+                      </div>
+                      <div class="card" data-card="12">
+                        <img
+                          src="assets/img/skill/bootstrap-color.svg"
+                          alt="Image 12"
+                        />
+                        <p>Bootstrap</p>
+                      </div>
+                      <div class="card" data-card="13">
+                        <img
+                          src="assets/img/skill/elixir-color.svg"
+                          alt="Image 13"
+                        />
+                        <p>Elixir</p>
+                      </div>
+                      <div class="card" data-card="14">
+                        <img
+                          src="assets/img/skill/phoenixframework-color.svg"
+                          alt="Image 14"
+                        />
+                        <p>Phoenix Framework</p>
+                      </div>
+                    </div>
+
+                    <div class="slider-button">
+                      <button class="sbutton" id="prevBtn">
+                        <i class="ri-arrow-left-s-line"></i>
+                      </button>
+                      <button class="sbutton" id="nextBtn">
+                        <i class="ri-arrow-right-s-line"></i>
+                      </button>
+                    </div>
+
+                    <div class="feeds-info-counts">
+                      <div class="feeds-button">
+                        <a class="heartButton feedsnormal"
+                          ><i class="ri-heart-3-line ri-1x"></i
+                        ></a>
+                        <a class="feedsnormal" target="_blank"
+                          ><i class="ri-share-forward-line ri-1x"></i
                         ></a>
                       </div>
                     </div>
-                    <audio
-                      id="music"
-                      src="assets/audio/Soft Dream／NERUSONF .mp3"
-                    ></audio>
                   </div>
+                </div>
+              </div>
+            </div>
 
-                  <div class="feeds-info-counts">
-                    <div class="feeds-button">
-                      <a class="heartButton feedsnormal"
-                        ><i class="ri-heart-3-line ri-1x"></i
-                      ></a>
-                      <a
-                        class="feedsnormal"
-                        href="https://open.spotify.com/playlist/7zZQY0eI4M0zcNvz10XsJp?si=47e7254f0e294b7b"
-                        target="_blank"
-                        ><i class="ri-share-forward-line ri-1x"></i
-                      ></a>
-                    </div>
+            <!-- ABOUT -->
+            <div id="content_c" class="skills__list">
+              <div class="feeds-wrap">
+                <div class="feeds-header">
+                  <img
+                    src="./assets/img/about/spotify-color.svg"
+                    alt=""
+                    class="avator"
+                  />
+                  <div class="feeds-header-info">
+                    Spotify<span>. Just now</span>
+                    <p>
+                      Just songs from the playlist that I often listen to,
+                      enjoy.
+                    </p>
                   </div>
                 </div>
 
-                <div class="feeds-wrap">
-                  <div class="feeds-header">
-                    <img
-                      src="./assets/img/about/instagram-color.svg"
-                      alt=""
-                      class="avator"
-                    />
-                    <div class="feeds-header-info">
-                      Instagram<span>. 1m ago</span>
-                      <p>
-                        My other skills? you can visit my Instagram. You can see
-                        Instagram Typography Content and some of my Photography
-                        Collections.
-                      </p>
+                <div class="music-player">
+                  <div class="box-player">
+                    <figure class="albumn-cover">
+                      <img
+                        src="assets/img/SL-072620-33020-15.jpg"
+                        alt="Night Sky with Moon Stars and Clouds Background"
+                      />
+                    </figure>
+                    <div class="track-name">
+                      <h1><a>BGM Soft Dream</a></h1>
+                      <h2>
+                        <span class="artist"
+                          ><a>NerusonF<br /></a
+                        ></span>
+                        &ndash;
+                        <span class="album"><a>フリーBGM</a></span>
+                      </h2>
+                    </div>
+                    <div class="controls">
+                      <a class="play-button"
+                        ><i class="ri-play-line ri-1x"></i
+                      ></a>
                     </div>
                   </div>
+                  <audio
+                    id="music"
+                    src="assets/audio/Soft Dream／NERUSONF .mp3"
+                  ></audio>
+                </div>
 
-                  <div class="feeds-info-counts">
-                    <div class="feeds-button">
-                      <a class="heartButton feedsnormal"
-                        ><i class="ri-heart-3-line ri-1x"></i
-                      ></a>
-                      <a
-                        class="feedsnormal"
-                        href="https://www.instagram.com/setografi"
-                        target="_blank"
-                        ><i class="ri-share-forward-line ri-1x"></i
-                      ></a>
-                    </div>
+                <div class="feeds-info-counts">
+                  <div class="feeds-button">
+                    <a class="heartButton feedsnormal"
+                      ><i class="ri-heart-3-line ri-1x"></i
+                    ></a>
+                    <a
+                      class="feedsnormal"
+                      href="https://open.spotify.com/playlist/7zZQY0eI4M0zcNvz10XsJp?si=47e7254f0e294b7b"
+                      target="_blank"
+                      ><i class="ri-share-forward-line ri-1x"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="feeds-wrap">
+                <div class="feeds-header">
+                  <img
+                    src="./assets/img/about/instagram-color.svg"
+                    alt=""
+                    class="avator"
+                  />
+                  <div class="feeds-header-info">
+                    Instagram<span>. 1m ago</span>
+                    <p>
+                      My other skills? you can visit my Instagram. You can see
+                      Instagram Typography Content and some of my Photography
+                      Collections.
+                    </p>
                   </div>
                 </div>
 
-                <div class="feeds-wrap">
-                  <div class="feeds-header">
-                    <img
-                      src="./assets/img/about/x-color.svg"
-                      alt=""
-                      class="avator"
-                    />
-                    <div class="feeds-header-info">
-                      Twitter<span>. 2m ago</span>
-                      <p>
-                        You can see me here sharing design thoughts and
-                        sometimes I tell you about my daily activities and
-                        hobbies.
-                      </p>
-                    </div>
+                <div class="feeds-info-counts">
+                  <div class="feeds-button">
+                    <a class="heartButton feedsnormal"
+                      ><i class="ri-heart-3-line ri-1x"></i
+                    ></a>
+                    <a
+                      class="feedsnormal"
+                      href="https://www.instagram.com/setografi"
+                      target="_blank"
+                      ><i class="ri-share-forward-line ri-1x"></i
+                    ></a>
                   </div>
+                </div>
+              </div>
 
-                  <div class="feeds-info-counts">
-                    <div class="feeds-button">
-                      <a class="heartButton feedsnormal"
-                        ><i class="ri-heart-3-line ri-1x"></i
-                      ></a>
-                      <a
-                        class="feedsnormal"
-                        href="https://twitter.com/sicalondktr"
-                        target="_blank"
-                        ><i class="ri-share-forward-line ri-1x"></i
-                      ></a>
-                    </div>
+              <div class="feeds-wrap">
+                <div class="feeds-header">
+                  <img
+                    src="./assets/img/about/x-color.svg"
+                    alt=""
+                    class="avator"
+                  />
+                  <div class="feeds-header-info">
+                    Twitter<span>. 2m ago</span>
+                    <p>
+                      You can see me here sharing design thoughts and sometimes
+                      I tell you about my daily activities and hobbies.
+                    </p>
                   </div>
                 </div>
 
-                <div class="feeds-wrap">
-                  <div class="feeds-header">
-                    <img
-                      src="./assets/img/about/linkedin-color.svg"
-                      alt=""
-                      class="avator"
-                    />
-                    <div class="feeds-header-info">
-                      LinkedIn<span>. 3d ago</span>
-                      <p>See my experience and qualifications.</p>
-                    </div>
+                <div class="feeds-info-counts">
+                  <div class="feeds-button">
+                    <a class="heartButton feedsnormal"
+                      ><i class="ri-heart-3-line ri-1x"></i
+                    ></a>
+                    <a
+                      class="feedsnormal"
+                      href="https://twitter.com/sicalondktr"
+                      target="_blank"
+                      ><i class="ri-share-forward-line ri-1x"></i
+                    ></a>
                   </div>
+                </div>
+              </div>
 
-                  <div class="feeds-info-counts">
-                    <div class="feeds-button">
-                      <a class="heartButton feedsnormal"
-                        ><i class="ri-heart-3-line ri-1x"></i
-                      ></a>
-                      <a
-                        class="feedsnormal"
-                        href="https://www.linkedin.com/in/setografi"
-                        target="_blank"
-                        ><i class="ri-share-forward-line ri-1x"></i
-                      ></a>
-                    </div>
+              <div class="feeds-wrap">
+                <div class="feeds-header">
+                  <img
+                    src="./assets/img/about/linkedin-color.svg"
+                    alt=""
+                    class="avator"
+                  />
+                  <div class="feeds-header-info">
+                    LinkedIn<span>. 3d ago</span>
+                    <p>See my experience and qualifications.</p>
                   </div>
                 </div>
 
-                <div class="feeds-wrap">
-                  <div class="feeds-header">
-                    <img
-                      src="./assets/img/about/readdotcv-color.svg"
-                      alt=""
-                      class="avator"
-                    />
-                    <div class="feeds-header-info">
-                      read.cv<span>. 1y ago</span>
-                      <p>Find me and take me.</p>
-                    </div>
+                <div class="feeds-info-counts">
+                  <div class="feeds-button">
+                    <a class="heartButton feedsnormal"
+                      ><i class="ri-heart-3-line ri-1x"></i
+                    ></a>
+                    <a
+                      class="feedsnormal"
+                      href="https://www.linkedin.com/in/setografi"
+                      target="_blank"
+                      ><i class="ri-share-forward-line ri-1x"></i
+                    ></a>
                   </div>
+                </div>
+              </div>
 
-                  <div class="feeds-info-counts">
-                    <div class="feeds-button">
-                      <a class="heartButton feedsnormal"
-                        ><i class="ri-heart-3-line ri-1x"></i
-                      ></a>
-                      <a
-                        class="feedsnormal"
-                        href="https://read.cv/setografi"
-                        target="_blank"
-                        ><i class="ri-share-forward-line ri-1x"></i
-                      ></a>
-                    </div>
+              <div class="feeds-wrap">
+                <div class="feeds-header">
+                  <img
+                    src="./assets/img/about/readdotcv-color.svg"
+                    alt=""
+                    class="avator"
+                  />
+                  <div class="feeds-header-info">
+                    read.cv<span>. 1y ago</span>
+                    <p>Find me and take me.</p>
+                  </div>
+                </div>
+
+                <div class="feeds-info-counts">
+                  <div class="feeds-button">
+                    <a class="heartButton feedsnormal"
+                      ><i class="ri-heart-3-line ri-1x"></i
+                    ></a>
+                    <a
+                      class="feedsnormal"
+                      href="https://read.cv/setografi"
+                      target="_blank"
+                      ><i class="ri-share-forward-line ri-1x"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </main>
-
-      <footer>
-        <div class="footerspace">
-          <div class="footerleft"><p>Last updated 02 - 03 - 2024</p></div>
-          <div class="footerright"><p>&copy; 2023 Setografi</p></div>
         </div>
-      </footer>
+      </section>
+    </main>
 
-      <script src="./assets/js/main.js"></script>
-    </div>
+    <footer>
+      <div class="footerspace">
+        <div class="footerleft"><p>Last updated 02 - 03 - 2024</p></div>
+        <div class="footerright"><p>&copy; 2023 Setografi</p></div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
