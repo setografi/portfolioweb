@@ -56,7 +56,7 @@ document
     event.preventDefault(); // Mencegah tindakan default dari link
 
     // Menyalin email ke clipboard
-    var email = "youremail@example.com";
+    var email = "wahyusetotkrx18@gmail.com";
     var tempInput = document.createElement("input");
     tempInput.value = email;
     document.body.appendChild(tempInput);
