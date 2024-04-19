@@ -732,16 +732,15 @@ footer {
 
 ::-webkit-scrollbar {
   width: 0.6rem;
-  border-radius: 0.5rem;
   background-color: hsl(var(--hue), 8%, 66%);
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 0.5rem;
   background-color: hsl(var(--hue), 8%, 54%);
 }
 
 ::-webkit-scrollbar-thumb:hover {
+  border-radius: 0.5rem;
   background-color: hsl(var(--hue), 8%, 44%);
 }
 
@@ -941,10 +940,6 @@ footer {
   .box {
     width: 70%;
   }
-  .popup {
-    width: 90%;
-  }
-
   .mobile {
     width: 460px;
   }
